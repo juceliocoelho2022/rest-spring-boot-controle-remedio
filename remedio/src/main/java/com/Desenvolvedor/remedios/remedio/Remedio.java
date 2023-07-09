@@ -22,11 +22,20 @@ import lombok.Setter;
 @EqualsAndHashCode(of = "id")
 public class Remedio {
 
+	public Remedio(DadosCadastroRemedios dados) {
+		this.nome = dados.nome();
+		this.via = dados.via();
+		this.lote = dados.lote();
+		this.quantidade = dados.quantidade();
+		this.validade = dados.validade();
+		this.laboratorio = dados.laboratorio();
+	}
+
 	@Id
-	@GeneratedValue(strategy  = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	
+
 	@Enumerated(EnumType.STRING)
 	private Via via;
 	private String lote;

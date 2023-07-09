@@ -1,0 +1,5 @@
+package com.Desenvolvedor.remedios.remedio;
+
+public interface RemedioRepository {
+
+}
