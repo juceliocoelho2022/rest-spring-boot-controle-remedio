@@ -1,0 +1,12 @@
+package com.Desenvolvedor.remedios.remedio;
+
+public class Remedio {
+
+	private Long id;
+	private String nome;
+	private Via via;
+	private String lote;
+	private String quantidade;
+	private String validade;
+	private Laboratorio laboratorio;
+}
